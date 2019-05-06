@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Package.EntityFrameworkCore</AssemblyName>
+    <RootNamespace>Package.EntityFrameworkCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EF\Migrations\**" />
+    <EmbeddedResource Remove="EF\Migrations\**" />
+    <None Remove="EF\Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="EF\IRepositoryFactory.cs" />
+    <Compile Remove="EF\IUnitOfWork.cs" />
+    <Compile Remove="EF\IUnitOfWorkOfT.cs" />
+    <Compile Remove="EF\NonClusteredPrimaryKeySqlMigrationSqlGenerator.cs" />
+    <Compile Remove="EF\PackageDBContext.cs" />
+    <Compile Remove="EF\UnitOfWork.cs" />
+    <Compile Remove="EF\UnitOfWorkServiceCollectionExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.AutoHistory" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.2" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Package.Core\Package.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="EF\Migrations\" />
+  </ItemGroup>
+
+</Project>

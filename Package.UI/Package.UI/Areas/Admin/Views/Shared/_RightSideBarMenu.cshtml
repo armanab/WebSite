@@ -1,0 +1,272 @@
+﻿@*@if (Request.IsAuthenticated)
+    {
+        Package.Web.Helpers.ABluePrincipal principal = User as Package.Web.Helpers.ABluePrincipal;
+        string user = principal != null ? principal.FullName : User.Identity.Name;
+        string position = principal.Position;
+        <div class="logoUser">
+            <p class="centered">
+                <a href="~/Account/ChangeProfile">
+                    @if (principal.Image != null && principal.Image.IsExist)
+                    {
+                        <img src="@principal.Image.Virtual_FileName" class="img-circle" width="60">
+
+                    }
+                    else
+                    {
+                        <img src="~/Content/themes/dashgum/img/friends/fr-11.jpg" class="img-circle" width="60">
+                    }
+                </a>
+            </p>
+            <h4 class="centered">@user</h4>
+            <h5 class="centered">@{if (!string.IsNullOrWhiteSpace(position)) { Write(position); }}</h5>
+        </div>
+    }*@
+
+
+<aside id="rightsidebar" class="sidebar">
+    <!-- User Info -->
+    <div class="user-info">
+        <div class="image">
+            <img src="~/assets/Admin-Kit/images/user.png" width="48" height="48" alt="User" />
+        </div>
+        <div class="info-container">
+            <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
+            <div class="email">john.doe@example.com</div>
+            <div class="btn-group user-helper-dropdown">
+                <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                    <li role="seperator" class="divider"></li>
+                    <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
+                    <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
+                    <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
+                    <li role="seperator" class="divider"></li>
+                    <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- #User Info -->
+    <!-- Menu -->
+    <div class="menu">
+        <ul class="list">
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="active">
+                <a asp-area="admin" asp-controller="dashboard" asp-action="Index">
+                    <i class="material-icons">dashboard</i>
+                    <span>صفحه اصلی</span>
+                </a>
+            </li>
+            <li>
+
+                <a asp-area="admin" asp-controller="products" asp-action="List">
+                    <i class="material-icons">widgets</i>
+                    <span>محصولات</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">assignment</i>
+                    <span>فرم ها</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a asp-area="admin" asp-controller="application" asp-action="ContactUs">
+                            
+                            <span>تماس با ما</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="admin" asp-controller="application" asp-action="AboutUs">
+
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="admin" asp-controller="Form" asp-action="AboutUs">
+                            <i class="material-icons">dashboard</i>
+                            <span>درباره ما</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">view_list</i>
+                    <span>Tables</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="pages/tables/normal-tables.html">Normal Tables</a>
+                    </li>
+                    <li>
+                        <a href="pages/tables/jquery-datatable.html">Jquery Datatables</a>
+                    </li>
+                    <li>
+                        <a href="pages/tables/editable-table.html">Editable Tables</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">perm_media</i>
+                    <span>Medias</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="pages/medias/image-gallery.html">Image Gallery</a>
+                    </li>
+                    <li>
+                        <a href="pages/medias/carousel.html">Carousel</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">pie_chart</i>
+                    <span>Charts</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="pages/charts/morris.html">Morris</a>
+                    </li>
+                    <li>
+                        <a href="pages/charts/flot.html">Flot</a>
+                    </li>
+                    <li>
+                        <a href="pages/charts/chartjs.html">ChartJS</a>
+                    </li>
+                    <li>
+                        <a href="pages/charts/sparkline.html">Sparkline</a>
+                    </li>
+                    <li>
+                        <a href="pages/charts/jquery-knob.html">Jquery Knob</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">content_copy</i>
+                    <span>Example Pages</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="pages/examples/sign-in.html">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/sign-up.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/forgot-password.html">Forgot Password</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/blank.html">Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/404.html">404 - Not Found</a>
+                    </li>
+                    <li>
+                        <a href="pages/examples/500.html">500 - Server Error</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">map</i>
+                    <span>Maps</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="pages/maps/google.html">Google Map</a>
+                    </li>
+                    <li>
+                        <a href="pages/maps/yandex.html">YandexMap</a>
+                    </li>
+                    <li>
+                        <a href="pages/maps/jvectormap.html">jVectorMap</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">trending_down</i>
+                    <span>Multi Level Menu</span>
+                </a>
+                <ul class="ml-menu">
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span>Menu Item</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">
+                            <span>Menu Item - 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <span>Level - 2</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span>Menu Item</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>Level - 3</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span>Level - 4</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="pages/changelogs.html">
+                    <i class="material-icons">update</i>
+                    <span>Changelogs</span>
+                </a>
+            </li>
+            <li class="header">LABELS</li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="material-icons col-red">donut_large</i>
+                    <span>Important</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="material-icons col-amber">donut_large</i>
+                    <span>Warning</span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="material-icons col-light-blue">donut_large</i>
+                    <span>Information</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- #Menu -->
+    <!-- Footer -->
+    <div class="legal">
+        <div class="copyright">
+
+        </div>
+        <div class="version">
+            <b>Version: </b> 1.0.0
+        </div>
+    </div>
+    <!-- #Footer -->
+</aside>

@@ -1,0 +1,49 @@
+﻿<nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+        <div class="navbar-translate">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">رزواسیون آنلاین هتل</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a asp-area="" class="nav-link" rel="tooltip" title="" data-placement="bottom" asp-controller="Home" asp-action="Index">صفحه اصلی</a>
+                </li>
+
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="material-icons">apps</i> محصولات
+                    </a>
+                    <div class="dropdown-menu dropdown-with-icons">
+                        <a asp-controller="Product" asp-action="Item" class="dropdown-item">
+
+                            <i class="material-icons">layers</i> رزرواسیون هتل
+                        </a>
+
+                    </div>
+                </li>
+
+
+                <li class="nav-item">
+                    @Html.RouteLink("درباره ما", "default",
+                                        new { action = "About", controller = "Home" }, new { @class = "nav-link" })
+                </li>
+
+                <li class="nav-item">
+                    @Html.RouteLink("تماس با ما", "default",
+                                  new { action = "Contact", controller = "Home" },new { @class = "nav-link" })
+                </li>
+
+
+            </ul>
+            @await Html.PartialAsync("_LoginPartial")
+        </div>
+    </div>
+</nav>

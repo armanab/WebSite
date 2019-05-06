@@ -1,0 +1,36 @@
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.deps.json
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.Core.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.Core.pdb
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csprojResolveAssemblyReference.cache
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.AssemblyInfoInputs.cache
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.AssemblyInfo.cs
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csproj.CopyComplete
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.deps.json
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.Core.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.Core.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csprojResolveAssemblyReference.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.AssemblyInfoInputs.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.AssemblyInfo.cs
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csproj.CopyComplete
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.deps.json
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.Core.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\bin\Debug\netcoreapp2.0\Package.Core.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csprojAssemblyReference.cache
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.AssemblyInfoInputs.cache
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.AssemblyInfo.cs
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.csproj.CopyComplete
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.EntityFrameworkCore\obj\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb

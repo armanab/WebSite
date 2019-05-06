@@ -1,0 +1,281 @@
+﻿@model Package.Core.DTO.Products.ProductViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+@using (Html.BeginForm("Edit", "Products"))
+{
+    <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="header">
+                    <h2>
+                        ویرایش
+                    </h2>
+                    <ul class="header-dropdown m-r--5">
+                        <li>
+                            @Html.ActionLink("برگشتن به لیست","List","Products")
+                        </li>
+                    </ul>
+                </div>
+                <div class="body">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                @Html.HiddenFor(model => model.Id)
+                            </div>
+                            <div class="form-group form-float form-group-lg">
+                                <div class="form-line">
+                                    <label class="form-label">عنوان</label>
+                                    @Html.TextBoxFor(model => model.Title, new { @class = "form-control" })
+                                    <span asp-validation-for="Title" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-float form-group-lg">
+                                <label asp-for="Description" class="control-label">توضیحات</label>
+                                @*text editor description*@
+                                <div id="editor">
+                                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group form-float form-group-lg">
+                                <div class="form-line">
+                                    <label class="card-inside-title">تاریخ ثبت</label>
+                                    @Html.DisplayFor(model => model.InsertDate, new { @class = "form-control" })
+
+                                    @*<label id="checkbox-error" class="error" for="checkbox">This field is required.</label>
+                                    <span asp-validation-for="Title" class="text-danger"></span>*@
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Save" class="btn btn-primary waves-effect" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        await Html.RenderPartialAsync("_FloaraScriptsPartial");
+    }
+    @*<script>
+        $(function () {
+            $('#Description').froalaEditor()
+        });</script>*@
+
+    <script>
+        $(function () {
+            $('#Description').froalaEditor({
+                imageUploadURL: '/FroalaApi/UploadImage',
+                imageUploadParams: {
+                    id: 'Description'
+                },
+                fileUploadURL: '/FroalaApi/UploadFile',
+                imageManagerLoadURL: '/FroalaApi/LoadImages',
+                imageManagerDeleteURL: "/FroalaApi/DeleteImage",
+                imageManagerDeleteMethod: "POST"
+            })
+                // Catch image removal from the editor.
+                .on('froalaEditor.image.removed', function (e, editor, $img) {
+                    $.ajax({
+                        // Request method.
+                        method: "POST",
+
+                        // Request URL.
+                        url: "/FroalaApi/DeleteImage",
+
+                        // Request params.
+                        data: {
+                            src: $img.attr('src')
+                        }
+                    })
+                        .done(function (data) {
+                            console.log('image was deleted');
+                        })
+                        .fail(function (err) {
+                            console.log('image delete problem: ' + JSON.stringify(err));
+                        })
+                })
+                // Catch image removal from the editor.
+                .on('froalaEditor.file.unlink', function (e, editor, link) {
+                    $.ajax({
+                        // Request method.
+                        method: "POST",
+
+                        // Request URL.
+                        url: "/FroalaApi/DeleteFile",
+
+                        // Request params.
+                        data: {
+                            src: link.getAttribute('href')
+                        }
+                    })
+                        .done(function (data) {
+                            console.log('file was deleted');
+                        })
+                        .fail(function (err) {
+                            console.log('file delete problem: ' + JSON.stringify(err));
+                        })
+                })
+
+            $('#edit-resize').froalaEditor({
+                imageUploadURL: '/FroalaApi/UploadImageResize',
+                fileUploadURL: '/FroalaApi/UploadFile',
+                imageManagerLoadURL: '/FroalaApi/LoadImages',
+                imageManagerDeleteURL: "/FroalaApi/DeleteImage",
+                imageManagerDeleteMethod: "POST"
+            })
+                // Catch image removal from the editor.
+                .on('froalaEditor.image.removed', function (e, editor, $img) {
+                    $.ajax({
+                        // Request method.
+                        method: "POST",
+
+                        // Request URL.
+                        url: "/FroalaApi/DeleteImage",
+
+                        // Request params.
+                        data: {
+                            src: $img.attr('src')
+                        }
+                    })
+                        .done(function (data) {
+                            console.log('image was deleted');
+                        })
+                        .fail(function (err) {
+                            console.log('image delete problem: ' + JSON.stringify(err));
+                        })
+                })
+
+                // Catch image removal from the editor.
+                .on('froalaEditor.file.unlink', function (e, editor, link) {
+                    $.ajax({
+                        // Request method.
+                        method: "POST",
+
+                        // Request URL.
+                        url: "/FroalaApi/DeleteFile",
+
+                        // Request params.
+                        data: {
+                            src: link.getAttribute('href')
+                        }
+                    })
+                        .done(function (data) {
+                            console.log('file was deleted');
+                        })
+                        .fail(function (err) {
+                            console.log('file delete problem: ' + JSON.stringify(err));
+                        })
+                });
+
+            $('#edit-validation').froalaEditor({
+                imageUploadURL: '/FroalaApi/UploadImageValidation',
+                imageUploadParam: 'myImage',
+                fileUploadURL: '/FroalaApi/UploadFileValidation',
+                fileUploadParam: 'myFile',
+                fileMaxSize: 1024 * 1024 * 50,
+                imageManagerLoadURL: '/FroalaApi/LoadImages',
+                imageManagerDeleteURL: "/FroalaApi/DeleteImage",
+                imageManagerDeleteMethod: "POST"
+            })
+                // Catch image removal from the editor.
+                .on('froalaEditor.image.removed', function (e, editor, $img) {
+                    $.ajax({
+                        // Request method.
+                        method: "POST",
+
+                        // Request URL.
+                        url: "/FroalaApi/DeleteImage",
+
+                        // Request params.
+                        data: {
+                            src: $img.attr('src')
+                        }
+                    })
+                        .done(function (data) {
+                            console.log('image was deleted');
+                        })
+                        .fail(function (err) {
+                            console.log('image delete problem: ' + JSON.stringify(err));
+                        })
+                })
+                // Catch image removal from the editor.
+                .on('froalaEditor.file.unlink', function (e, editor, link) {
+                    $.ajax({
+                        // Request method.
+                        method: "POST",
+
+                        // Request URL.
+                        url: "/FroalaApi/DeleteFile",
+
+                        // Request params.
+                        data: {
+                            src: link.getAttribute('href')
+                        }
+                    })
+                        .done(function (data) {
+                            console.log('file was deleted');
+                        })
+                        .fail(function (err) {
+                            console.log('file delete problem: ' + JSON.stringify(err));
+                        })
+                })
+
+            $.get("/FroalaApi/S3Signature", {})
+                .done(function (data) {
+                    $('#edit-amazon').froalaEditor({
+                        imageUploadToS3: data,
+                        fileUploadToS3: data
+                    })
+                });
+        });
+    </script>
+
+}
+@section css{
+    <style>
+        div#editor {
+            width: 81%;
+            min-height: 80px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .ss {
+            background-color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/froala_editor.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/froala_style.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/code_view.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/draggable.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/colors.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/emoticons.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/image_manager.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/image.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/line_breaker.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/table.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/char_counter.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/video.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/fullscreen.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/file.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/quick_insert.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/help.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/third_party/spell_checker.css">
+    <link rel="stylesheet" href="~/assets/froala_editor/css/plugins/special_characters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+}
+

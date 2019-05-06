@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "اطلاعات تماس";
+    Layout = "~/Views/Shared/_ProfileLayout.cshtml";
+
+}
+<div class="page-header header-filter" data-parallax="true" style="background-image: url('/assets/Material-Kit/img/bg3.jpg');"></div>
+
+<div class="main main-raised">
+    <div class="profile-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="profile">
+                        <div class="avatar">
+                            <img src="~/assets/Material-Kit/img/faces/christian.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                        </div>
+                        <div class="name">
+                            <h2 class="title">@ViewData["Title"]</h2>
+                            <h3>@ViewData["Message"]</h3>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="description text-center">
+                <p>
+                    ضمن تشکر از شما کاربر گرامی، ارسال نظرات و پیشنهادات و یا انتقادات شما میتواند در بهبود عملکرد ما تاثیر کاملا موثری ایفا کند، لذا خواهشمند است نظرات ارزنده ی خود را با ما در میان بگذارید.
+
+                    در صورتی که آدرس پست الکترونیکی خود را وارد کنید ما پاسخگوی نظرات شما خواهیم بود.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="profile-tabs">
+                        <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#Email" role="tab" data-toggle="tab">
+                                    <i class="material-icons">email</i> پست الکترونیک
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#works" role="tab" data-toggle="tab">
+                                    <i class="material-icons">history</i> سوابق
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Address" role="tab" data-toggle="tab">
+                                    <i class="material-icons">phone</i> اطلاعات تماس
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content tab-space">
+                <div class="tab-pane active text-center gallery" id="Email">
+                    <div class="row">
+                        <div class="col-md-6 ml-auto mr-auto">
+                            <address>
+                                <strong>Support:</strong> <a href="mailto:Support@bookchecker.ir">Support@bookchecker.ir</a><br />
+                                <strong>Marketing:</strong> <a href="mailto:Marketing@bookchecker.ir">Marketing@bookchecker.ir</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane text-center gallery" id="works">
+                    <div class="row">
+                        <div class="col-md-6 ml-auto mr-auto">
+                         
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="tab-pane text-center gallery" id="Address">
+                    <div class="row">
+                        <div class="col-md-6 ml-auto mr-auto">
+                            <address>
+                                One Microsoft Way<br />
+                                Redmond, WA 98052-6399<br />
+                                <abbr title="Phone">P:</abbr>
+                                425.555.0100
+                            </address>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,158 @@
+﻿@using Package.Core.DTO.Products
+@using Package.Core.PagedList
+@model IPagedList<ProductViewModel>
+
+@{
+
+    ViewData["Title"] = "List";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    مدیریت محصولات
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li>
+                        <a asp-action="Create">محصول جدید</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="table-responsive">
+                    <table id="ProductsTable" class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ردیف
+                                </th>
+                                <th>
+                                    عنوان
+                                </th>
+
+                                <th>
+                                    تاریخ ثبت
+                                </th>
+
+                               
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                @for (int i = 0; i < Model.Items.Count; i++)
+                                 {
+                                      <td>
+                                          @Model.Items[i].Id
+                                      </td>
+                                      <td>
+                                          @Model.Items[i].Title
+                                      </td>
+                                    
+                                      <td>
+                                          @Model.Items[i].InsertDate
+                                      </td>
+                                      <td>
+                                          @Html.ActionLink("Edit", "Edit", new { id = Model.Items[i].Id },new { @class = "btn btn-warning" }) 
+                                          @Html.ActionLink("Details", "Details", new {  id=Model.Items[i].Id  }, new { @class = "btn btn-info" }) 
+                                          @Html.ActionLink("Delete", "Delete", new {  id=Model.Items[i].Id  }, new { @class = "btn btn-danger" })
+                                      </td>
+                           
+
+                                  }
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/assets/Admin-Kit/plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="~/assets/Admin-Kit/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+    @*<script src="~/assets/Admin-Kit/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>*@
+    @*<script src="~/assets/Admin-Kit/js/admin.js"></script>*@
+
+    @*<script src="~/assets/Admin-Kit/js/pages/tables/jquery-datatable.js"></script>*@
+
+    @*<script>
+        $(function () {
+
+
+          $("#ProductsTable").DataTable({
+              processing: true, // for show progress bar
+              serverSide: true, // for process server side
+              filter: true, // this is for disable filter (search box)
+              orderMulti: false, // for disable multiple column at once
+              ajax: {
+                  "url": "/Admin/Products/LoadData",
+                  "type": "POST",
+                  "datatype": "json",
+
+              },
+              columnDefs:
+                  [{
+                      "targets": [0],
+                      "visible": false,
+                      "searchable": false
+                  }],
+              columns: [
+                  { "data": "Id", "name": "Id", "autoWidth": true },
+                  { "data": "Title", "name": "Title", "autoWidth": true },
+                  { "data": "InsertDate", "name": "InsertDate", "autoWidth": true },
+
+                  {
+                      "render": function (data, type, full, meta) { return '<a class="btn btn-info" href="/Products/Edit/' + full.Id + '">Edit</a>'; }
+                  },
+                  {
+                      data: null, render: function (data, type, row) {
+                          return "<a href='#' class='btn btn-danger' onclick=DeleteData('" + row.Id + "'); >Delete</a>";
+                      }
+                  },
+              ]
+
+          });
+        });
+
+
+    function DeleteData(Id)
+        {
+            if (confirm("برای پاک کردن اطمینان دارید...؟"))
+            {
+                Delete(Id);
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+        function Delete(Id)
+          {
+              var url = '@Url.Content("~/")' + "Admin/Products/Delete";
+
+                  $.post(url, { Id: Id }, function (data)
+                      {
+                          if (data)
+                          {
+                              oTable = $("#ProductsTable").DataTable();
+                              oTable.draw();
+                          }
+                          else
+                          {
+                              alert("اشتباهی رخ داده! لطفا دوباره تلاش کنید");
+                          }
+                      });
+          }
+
+
+    </script>*@
+}

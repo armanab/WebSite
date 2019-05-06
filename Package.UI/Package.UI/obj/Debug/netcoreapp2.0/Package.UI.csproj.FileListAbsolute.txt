@@ -1,0 +1,59 @@
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.deps.json
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.runtimeconfig.json
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.runtimeconfig.dev.json
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.pdb
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Core.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Core.pdb
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csprojResolveAssemblyReference.cache
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csproj.CoreCompileInputs.cache
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.AssemblyInfoInputs.cache
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.AssemblyInfo.cs
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csproj.CopyComplete
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csprojResolveAssemblyReference.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csproj.CoreCompileInputs.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.AssemblyInfoInputs.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.AssemblyInfo.cs
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.deps.json
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.runtimeconfig.json
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.runtimeconfig.dev.json
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\FroalaEditorSDK.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Core.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Service.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Core.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Service.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\FroalaEditorSDK.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csproj.CopyComplete
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.deps.json
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.runtimeconfig.json
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.runtimeconfig.dev.json
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.UI.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\FroalaEditorSDK.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Core.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Service.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Core.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.EntityFrameworkCore.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\Package.Service.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\bin\Debug\netcoreapp2.0\FroalaEditorSDK.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csprojAssemblyReference.cache
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csproj.CoreCompileInputs.cache
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.AssemblyInfoInputs.cache
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.AssemblyInfo.cs
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.csproj.CopyComplete
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.UI\obj\Debug\netcoreapp2.0\Package.UI.pdb

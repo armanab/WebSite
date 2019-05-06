@@ -1,0 +1,25 @@
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.deps.json
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.pdb
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.csproj.CoreCompileInputs.cache
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.AssemblyInfoInputs.cache
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.AssemblyInfo.cs
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.dll
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.pdb
+C:\Users\ArmanAB\Documents\Visual Studio 2017\Projects\TelegramBot\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.csprojResolveAssemblyReference.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.deps.json
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.pdb
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.csproj.CoreCompileInputs.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.AssemblyInfoInputs.cache
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.AssemblyInfo.cs
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.dll
+C:\abi\Source\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.deps.json
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.Library\bin\Debug\netcoreapp2.0\Package.Library.pdb
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.csproj.CoreCompileInputs.cache
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.AssemblyInfoInputs.cache
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.AssemblyInfo.cs
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.dll
+C:\Abi\Source\WebSite\WebSite\Package\Package\Package.UI\Package.Library\obj\Debug\netcoreapp2.0\Package.Library.pdb

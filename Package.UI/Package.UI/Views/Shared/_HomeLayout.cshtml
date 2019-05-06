@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Package.UI</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <link href="~/assets/css/fontiran.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- CSS Files -->
+    <link href="~/assets/Material-Kit/css/material-kit.css?v=2.0.3" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="~/assets/Material-Kit/demo/demo.css" rel="stylesheet" />
+    <!--  font iransans-->
+</head>
+<body class="index-page sidebar-collapse">
+    @Html.Partial("_MenuPartial")
+
+    @RenderBody()
+
+    <!-- Classic Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="material-icons">clear</i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link">Nice Button</button>
+                    <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End Modal -->
+    @Html.Partial("_FooterPartial")
+
+    <!--render js-->
+    <!--   Core JS Files   -->
+    <script src="~/assets/Material-Kit/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="~/assets/Material-Kit/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="~/assets/Material-Kit/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="~/assets/Material-Kit/js/plugins/moment.min.js"></script>
+  
+    <script src="~/assets/Material-Kit/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  
+    <script src="~/assets/Material-Kit/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  
+    <script src="~/assets/Material-Kit/js/material-kit.js?v=2.0.3" type="text/javascript"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

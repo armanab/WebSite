@@ -1,0 +1,127 @@
+﻿@using System.Collections.Generic
+@using System.Linq
+@using Package.Core.Domain.Users
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Authentication
+@model LoginViewModel
+@inject SignInManager<User> SignInManager
+
+@{
+    ViewData["Title"] = "ورود به سیستم";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+
+}
+
+
+<h2 class="card-title text-center">@ViewData["Title"]</h2>
+<div class="card-body">
+    <div class="row">
+        <div class="col-md-5 ml-auto">
+            <div class="info info-horizontal">
+                <div class="icon icon-rose">
+                    <i class="material-icons">timeline</i>
+                </div>
+                <div class="description">
+                    <h4 class="info-title">Marketing</h4>
+                    <p class="description">
+                        We've created the marketing campaign of the website. It was a very interesting collaboration.
+                    </p>
+                </div>
+            </div>
+            <div class="info info-horizontal">
+                <div class="icon icon-primary">
+                    <i class="material-icons">code</i>
+                </div>
+                <div class="description">
+                    <h4 class="info-title">Fully Coded in HTML5</h4>
+                    <p class="description">
+                        We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub.
+                    </p>
+                </div>
+            </div>
+            <div class="info info-horizontal">
+                <div class="icon icon-info">
+                    <i class="material-icons">group</i>
+                </div>
+                <div class="description">
+                    <h4 class="info-title">Built Audience</h4>
+                    <p class="description">
+                        There is also a Fully Customizable CMS Admin Dashboard for this product.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 mr-auto">
+            <div class="social text-center">
+                <button class="btn btn-just-icon btn-round btn-twitter">
+                    <i class="fa fa-twitter"></i>
+                </button>
+                <button class="btn btn-just-icon btn-round btn-dribbble">
+                    <i class="fa fa-dribbble"></i>
+                </button>
+                <button class="btn btn-just-icon btn-round btn-facebook">
+                    <i class="fa fa-facebook"> </i>
+                </button>
+            </div>
+            <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">mail</i>
+                            </span>
+                        </div>
+                        <input asp-for="Email" class="form-control" placeholder="Email..." />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons">lock_outline</i>
+                            </span>
+                        </div>
+                        <input asp-for="Password" class="form-control" placeholder="Password..." />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="RememberMe" />
+
+                        <span class="form-check-sign">
+                            <span class="check"></span>
+                        </span>
+
+                        مرا به خاطر بسپار
+
+                    </label>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-round">ورود</button>
+                </div>
+                <div class="form-group text-right">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>
+                                <a asp-action="ForgotPassword">کلمه عبورم را فراموش کردم؟</a>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                <a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">ثبت کاربر جدید؟</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
