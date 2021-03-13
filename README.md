@@ -1,5 +1,5 @@
 # ASP.NET Core WebSite
-sample web site with n-layer architecture on ASP.NET core and Code First EF Core and 2 area public and admin
+sample web site with clean code on ASP.NET core and Code First EF Core and 2 area public and admin
 
 # how to run this project?
 
