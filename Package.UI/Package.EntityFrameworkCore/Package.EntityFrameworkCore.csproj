@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.6.2" />
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.AutoHistory" Version="2.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.2" />
